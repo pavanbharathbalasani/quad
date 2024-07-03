@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust width as needed */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between input and buttons */
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.input-container button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
   color: white;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list {
+  list-style: none;
+  padding: 0;
 }
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-item button {
+  margin-left: 10px;
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-text {
+  flex: 1; /* Allow task text to expand */
+}
+
+.task-item button {
+  margin-left: 10px; /* Add space between delete and edit buttons */
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-text {
+  flex: 1; /* Allow task text to expand */
+}
+
+.task-item button {
+  margin-left: 10px; /* Add space between delete and edit buttons */
+  padding: 8px 16px; /* Adjust button padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-item button.delete-btn {
+  background-color: #dc3545; /* Background color for delete button */
+  color: white; /* Text color */
+}
+
+.task-item button.edit-btn {
+  background-color: #007bff; /* Background color for edit button */
+  color: white; /* Text color */
+}
+
+.task-item button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+  max-height: 400px; /* Set a maximum height for the task list */
+  overflow-y: auto; /* Enable vertical scrolling for overflow */
+}
+
+.task-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-text {
+  word-wrap: break-word; /* Wrap long words to prevent overflow */
+}
+
+.task-item button {
+  margin-left: 10px; /* Add space between delete and edit buttons */
+  padding: 8px 16px; /* Adjust button padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-item button.delete-btn {
+  background-color: #dc3545; /* Background color for delete button */
+  color: white; /* Text color */
+}
+
+.task-item button.edit-btn {
+  background-color: #007bff; /* Background color for edit button */
+  color: white; /* Text color */
+}
+
+.task-item button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
